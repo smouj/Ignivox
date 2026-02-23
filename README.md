@@ -18,7 +18,7 @@
 **Legacy code revival forge for fearless modernization.**
 
 ## Vision
-Ignivox is a production-oriented skill in the **smouj SuperAgents Universe**. It is designed to solve a concrete operational problem with local-first execution, transparent reasoning traces, and practical safety controls. The architecture prioritizes free/open-source tooling, deterministic behavior, and modular integration with other autonomous skills.
+Ignivox is a legacy code modernization skill that analyzes brittle codebases, proposes safe refactors, and assists migration workflows. It emphasizes incremental change, test-backed confidence, and operational continuity during technical debt reduction.
 
 ## Core Superpower
 - ⚡ **Automated refactor blueprints with safety gates**
