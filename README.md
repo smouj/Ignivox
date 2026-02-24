@@ -7,7 +7,7 @@
 ![Language](https://img.shields.io/badge/language-Python%203.11%2B-blue)
 ![License](https://img.shields.io/github/license/smouj/Ignivox)
 ![Last Commit](https://img.shields.io/github/last-commit/smouj/Ignivox)
-![CI](https://img.shields.io/badge/CI-planned-lightgrey)
+![CI](https://img.shields.io/github/actions/workflow/status/smouj/Ignivox/ci.yml?branch=main)
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20this%20project-ff5f5f?logo=ko-fi&logoColor=white)](https://ko-fi.com/smouj013_dev)
 
 <p align="center">
@@ -15,63 +15,44 @@
   <a href="./README.es.md"><img src="https://img.shields.io/badge/README-Español-c92a2a?style=for-the-badge" alt="Español"></a>
 </p>
 
-**Legacy code revival forge for fearless modernization.**
+**Legacy code modernization forge with safety-first refactoring.**
 
 ## Vision
-Ignivox is a legacy code modernization skill that analyzes brittle codebases, proposes safe refactors, and assists migration workflows. It emphasizes incremental change, test-backed confidence, and operational continuity during technical debt reduction.
+Analyzes legacy code paths and proposes incremental, test-oriented transformations.
 
-## Core Superpower
-- ⚡ **Automated refactor blueprints with safety gates**
+## What problem it solves
+Legacy systems are fragile and risky to modernize manually.
 
-## Current Status (February 2026)
-- 🚧 Ideation and robust scaffolding phase
-- Next milestones:
-  - [ ] Finalize domain contracts and interfaces
-  - [ ] Ship a minimal runnable CLI command
-  - [ ] Add Ollama local model profile and fallback strategy
-  - [ ] Implement one complete end-to-end example
-  - [ ] Add quality gates (lint, typecheck, test)
-  - [ ] Publish architecture and operational runbook
+## Core superpower
+- ⚡ **Refactor orchestration with behavior-preserving verification workflow**
 
-## Planned Architecture (free/open-source stack)
-- **Primary language:** Python 3.11+
-- **Agent framework:** LangGraph
-- **Local models:** Ollama (Llama 3.1, Qwen2.5, DeepSeek-Coder, Mistral)
-- **Core dependencies:** tree-sitter, gitpython, ruff, mypy, pytest
-- **Execution model:** local-first, optional self-hosted deployment
-
-## Capability Blueprint
-- ✅ Codebase mapping
-- ✅ Risk heatmaps
-- ✅ Incremental refactors
-- ✅ Patch proposals
-- ✅ Regression guardrails
+## Key use cases
+- ✅ Migration planning
+- ✅ Refactor assistance
+- ✅ Code quality uplift
+- ✅ Legacy risk reduction
 
 
-## Project Structure
-```text
-Ignivox/
-├── src/ignivox/
-│   ├── core/           # domain orchestration and policies
-│   ├── adapters/       # external integrations and tool bridges
-│   ├── memory/         # state, retrieval, and context strategies
-│   └── cli.py          # local operator command interface
-├── docs/
-│   ├── IMPLEMENTATION.md
-│   ├── ARCHITECTURE.md
-│   └── RUNBOOK.md
-├── examples/
-├── tests/
-├── requirements.txt
-└── README.md
-```
+## API surface
+`POST /transform`, `GET /health`
 
-## Quick Start
+## Technical stack
+- **Core stack:** FastAPI + AST tooling + automated validation
+- **Runtime:** local-first, self-hosted friendly
+- **Infra:** Docker Compose + Caddy + Redis/Chroma/Ollama compatibility
+
+## Current status (Feb 2026)
+- ✅ Public scaffold available
+- ✅ Bilingual README (EN default + ES)
+- ✅ CI + release baseline configured
+- 🚧 Feature hardening in progress
+
+## Quick start
 ```bash
 git clone https://github.com/smouj/Ignivox.git
 cd Ignivox
 python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+source .venv/bin/activate
 pip install -r requirements.txt
 python -m src.ignivox.cli --help
 ```
@@ -83,10 +64,9 @@ python -m src.ignivox.cli --help
 - [Deployment Guide](./docs/DEPLOYMENT.md)
 - [Release Process](./docs/RELEASE.md)
 - [Changelog](./CHANGELOG.md)
-- [Contributing](./CONTRIBUTING.md)
 
 ## Contributing
-Contributions are welcome. Please read **CONTRIBUTING.md** before opening issues or PRs.
+Contributions are welcome. Please read [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ## License
 MIT © 2026 smouj
